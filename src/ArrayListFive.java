@@ -1,18 +1,18 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
-public class ArrayListThree {
+public class ArrayListFive {
     public static void main(String[] args) {
-        ArrayList al = new ArrayList();
-        ArrayList<Integer> eids = new ArrayList<>();
         ArrayList<String> enames = new ArrayList<>();
         enames.add("Rahul");
-        enames.add("sonia");
+        enames.add("Sonia");
         enames.add("Priyanka");
         enames.add("Modi");
         enames.add("Vijay");
         enames.add("kamal");
-        for (String ename : enames) {
-            System.out.println(ename);
-        }
+        System.out.println(enames);
+        Collections.sort(enames,Collections.reverseOrder());
+        System.out.println(enames);
     }
 }
